@@ -22,10 +22,10 @@ public class _02_BinarySearch {
     			if(array[mid]==value) {
     				return mid;
     			}
-    			else if(mid>value) {
+    			else if(array[mid]>value) {
     				return binarySearch(array,  start, mid-1,  value);
     			}
-    			else if(mid<value) {
+    			else if(array[mid]<value) {
     				return binarySearch(array, mid+1, end, value);
     			}
     		}
